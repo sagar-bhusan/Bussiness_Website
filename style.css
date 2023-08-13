@@ -1,0 +1,65 @@
+/* Styles for new sections and services */
+.services, .products, .contact {
+    background-color: #f8f8f8;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+/* Change the font family for the entire body */
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Change the font family for paragraphs */
+p {
+    font-family: 'Helvetica', sans-serif;
+}
+
+/* Change the font family for navigation links */
+.navbar-nav .nav-link {
+    font-family: 'Verdana', sans-serif;
+}
+
+.hero {
+    position: relative;
+    height: 100vh; /* Set the hero section height to 100% of viewport height */
+    background-image: url('Images\hero_image.jpg');
+    background-size: cover; /* Cover the entire hero section with the image */
+    background-position: center center; /* Center the image within the hero section */
+    color: white;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.display-4
+{
+    font-weight: bold;
+    text-align: left;
+}
+
+.lead
+{
+    font-weight: lighter;
+    text-align: left;
+}
+
+.service, .product {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Add more specific styling as needed */
+
+/* Responsive design */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+}

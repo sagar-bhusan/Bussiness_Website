@@ -6,13 +6,10 @@
     <title>Analog & Digital</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css"> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
      <!-- Navigation bar -->
-     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">Analog & Digital</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -38,10 +35,9 @@
         </div>
     </nav>
 
-    
-    
+    <!-- Hero section -->
     <section class="hero bg-dark text-white text-center py-5" style="background-image: url('Images/hero_image.jpg');">
-        <div class="container">
+        <div class="container hero-content">
             <h1 class="display-4">Welcome to Analog & Digital</h1>
             <p class="lead">Your business description goes here.</p>
         </div>
@@ -53,27 +49,21 @@
             <h2 class="text-center">Our Services</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Sales and Service</h5>
-                            <p class="card-text">We offer a wide range of computer products and services.</p>
-                        </div>
+                    <div class="service">
+                        <h3>Sales and Service</h3>
+                        <p>We offer a wide range of computer products and services.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Training</h5>
-                            <p class="card-text">Enhance your skills with our computer training programs.</p>
-                        </div>
+                    <div class="service">
+                        <h3>Training</h3>
+                        <p>Enhance your skills with our computer training programs.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">CBT Online Exam</h5>
-                            <p class="card-text">Prepare for exams with our Computer-Based Testing platform.</p>
-                        </div>
+                    <div class="service">
+                        <h3>CBT Online Exam</h3>
+                        <p>Prepare for exams with our Computer-Based Testing platform.</p>
                     </div>
                 </div>
             </div>
@@ -86,19 +76,15 @@
             <h2 class="text-center">Products</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Desktop Computers</h5>
-                            <p class="card-text">Explore our range of high-performance desktop computers.</p>
-                        </div>
+                    <div class="product">
+                        <h3>Desktop Computers</h3>
+                        <p>Explore our range of high-performance desktop computers.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Laptops</h5>
-                            <p class="card-text">Discover our lightweight and powerful laptops.</p>
-                        </div>
+                    <div class="product">
+                        <h3>Laptops</h3>
+                        <p>Discover our lightweight and powerful laptops.</p>
                     </div>
                 </div>
                 <!-- Add more product cards as needed -->
@@ -119,5 +105,10 @@
             <p>&copy; 2023 Analog & Digital. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

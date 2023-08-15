@@ -24,6 +24,7 @@ p {
 {
     font-weight: bold;
     text-align: left;
+    color: white;
 }
 
 .lead
@@ -72,4 +73,19 @@ p {
 .py-custom {
     padding-top: 100px; /* Adjust the top padding as needed */
     padding-bottom: 50px; /* Adjust the bottom padding as needed */
+}
+
+.service:hover,
+.product:hover {
+    transform: scale(1.02); /* Zoom in effect */
+    background-color: #939aa0; /* Change background color on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    transition: transform 0.2s, background-color 0.5s, box-shadow 0.8s; /* Transition properties */
+
+}
+
+.service,
+.product {
+    transition: transform 0.2s, background-color 0.5
+    s, box-shadow 0.8s ; /* Transition properties */
 }

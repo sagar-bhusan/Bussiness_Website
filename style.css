@@ -111,3 +111,33 @@ p {
         right: 10px;
     }
 }
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #3498db; /* Change the color on hover */
+}
+
+/* Styles for client logos */
+.client-logo {
+    text-align: center;
+    padding: 20px;
+}
+
+.client-logo-image {
+    max-height: 80px; /* Set the desired max height */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Maintain aspect ratio and fit within container */
+    transition: transform 0.3s;
+}
+
+.client-logo-image:hover {
+    transform: scale(1.1); /* Enlarge the logo on hover */
+}
+

@@ -35,7 +35,7 @@ $('#back-to-top').click(function(e) {
 });
 
 // Show loading screen overlay
-document.body.classList.add('loading-overlay');
+//document.body.classList.add('loading-overlay');
 
 // Hide loading screen overlay when page is fully loaded
 window.addEventListener('load', function() {

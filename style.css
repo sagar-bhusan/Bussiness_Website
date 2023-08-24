@@ -190,6 +190,12 @@ p {
     color: #555;
 }
 
+@media (max-width: 767px) {
+    #about .col-md-6.order-md-2 {
+      margin-top: 30px; /* Adjust this value as needed */
+    }
+  }
+
 /* Add more styling as needed */
 
 

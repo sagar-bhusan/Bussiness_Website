@@ -1,5 +1,7 @@
 /* Styles for new sections and services */
-.services, .products, .contact {
+.services,
+.products,
+.contact {
     background-color: #f8f8f8;
     padding: 2rem;
     margin: 2rem 0;
@@ -7,7 +9,7 @@
 
 /* Change the font family for the entire body */
 body {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* Change the font family for paragraphs */
@@ -20,20 +22,19 @@ p {
     font-family: 'Verdana', sans-serif;
 }
 
-.display-4
-{
+.display-4 {
     font-weight: bold;
     text-align: left;
     color: white;
 }
 
-.lead
-{
+.lead {
     font-weight: lighter;
     text-align: left;
 }
 
-.service, .product {
+.service,
+.product {
     background-color: #fff;
     border-radius: 5px;
     padding: 1rem;
@@ -48,10 +49,11 @@ p {
     /* Adjust styles for smaller screens */
 }
 
- /* Custom styles */
- .navbar {
-    background-color: transparent; /* Make the navbar background transparent */
-    
+/* Custom styles */
+.navbar {
+    background-color: transparent;
+    /* Make the navbar background transparent */
+
 }
 
 
@@ -61,7 +63,8 @@ p {
     height: 100vh;
     background-image: url('Images/hero_image.jpg');
     background-size: cover;
-    background-attachment: fixed; /* Fixed background image */
+    background-attachment: fixed;
+    /* Fixed background image */
     color: white;
 }
 
@@ -74,23 +77,29 @@ p {
 
 /* Adjust the padding of the content */
 .py-custom {
-    padding-top: 100px; /* Adjust the top padding as needed */
-    padding-bottom: 50px; /* Adjust the bottom padding as needed */
+    padding-top: 100px;
+    /* Adjust the top padding as needed */
+    padding-bottom: 50px;
+    /* Adjust the bottom padding as needed */
 }
 
 .service:hover,
 .product:hover {
-    transform: scale(1.02); /* Zoom in effect */
-    background-color: #939aa0; /* Change background color on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Add shadow effect */
-    transition: transform 0.2s, background-color 0.5s, box-shadow 0.8s; /* Transition properties */
+    transform: scale(1.02);
+    /* Zoom in effect */
+    background-color: #939aa0;
+    /* Change background color on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    /* Add shadow effect */
+    transition: transform 0.2s, background-color 0.5s, box-shadow 0.8s;
+    /* Transition properties */
 
 }
 
 .service,
 .product {
-    transition: transform 0.2s, background-color 0.5
-    s, box-shadow 0.8s ; /* Transition properties */
+    transition: transform 0.2s, background-color 0.5 s, box-shadow 0.8s;
+    /* Transition properties */
 }
 
 .back-to-top {
@@ -105,7 +114,7 @@ p {
 
 .back-to-top.show {
     opacity: 1;
-    }
+}
 
 @media (max-width: 768px) {
     .back-to-top {
@@ -123,7 +132,8 @@ p {
 }
 
 .social-icons a:hover {
-    color: #3498db; /* Change the color on hover */
+    color: #3498db;
+    /* Change the color on hover */
 }
 
 /* Styles for client logos */
@@ -133,14 +143,18 @@ p {
 }
 
 .client-logo-image {
-    max-height: 80px; /* Set the desired max height */
-    width: auto; /* Maintain aspect ratio */
-    object-fit: contain; /* Maintain aspect ratio and fit within container */
+    max-height: 80px;
+    /* Set the desired max height */
+    width: auto;
+    /* Maintain aspect ratio */
+    object-fit: contain;
+    /* Maintain aspect ratio and fit within container */
     transition: transform 0.3s;
 }
 
 .client-logo-image:hover {
-    transform: scale(1.1); /* Enlarge the logo on hover */
+    transform: scale(1.1);
+    /* Enlarge the logo on hover */
 }
 
 
@@ -183,19 +197,29 @@ p {
 /* Add your existing styles here */
 
 /* Sticky Footer */
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
 }
 
 #wrapper {
-    min-height: 100%; /* Ensure the wrapper fills the viewport height */
+    min-height: 100%;
+    /* Ensure the wrapper fills the viewport height */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 footer {
-    flex-shrink: 0; /* Prevent the footer from shrinking */
+    flex-shrink: 0;
+    /* Prevent the footer from shrinking */
 }
 
+/* Styles for the total visits counter */
+#visit-counter,
+#total_visits {
+    color: white;
+    font-weight: bold;
+    margin-left: 5px;
+}

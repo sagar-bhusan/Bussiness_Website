@@ -1,272 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Analog & Digital</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-   
+    <script src="code.jquery.com_jquery-3.7.0.js"></script>
+    <script src="myscript.js"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-</script>
-
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
+
 <body>
-<div id="wrapper" >
-    <!-- <script>
+    <div id="wrapper">
+        <!-- <script>
         // Redirect to loading screen while the page is loading
         window.location.href = 'loading.html';
     </script> -->
-     <!-- Navigation bar -->
-     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container" style="padding-left: 0% !important; padding-right: 0% !important;">
-            <a class="navbar-brand" href="index.html">Analog & Digital<br><h6>Kharagpur</h6></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        <!-- Navigation bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container" style="padding-left: 0% !important; padding-right: 0% !important;">
+                <a class="navbar-brand" href="index.html">Analog & Digital<br>
+                    <h6>Kharagpur</h6>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#products">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                </ul>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#products">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- Hero section -->
-    <section class="hero bg-dark text-white text-center py-5" style="background-image: url('Images/hero_image.jpg');">
-        <div class="container hero-content">
-            <h1 class="display-4">Analog & Digital</h1>
-            <p class="lead">A part of Indian IT Revolution</p>
-        </div>
-    </section>
-    
-    <!-- Services section starts -->
-    <section id="services" class="bg-light py-5" style="padding-top: 100px;">
-        <div class="container">
-            <h2 class="text-center">Our Services</h2>
-            <hr>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="service">
-                        <h3>Sales and Service</h3>
-                        <p>We offer a wide range of computer products and services.</p>
+        <!-- Hero section -->
+        <section class="hero bg-dark text-white text-center py-5"
+            style="background-image: url('Images/hero_image.jpg');">
+            <div class="container hero-content">
+                <h1 class="display-4">Analog & Digital</h1>
+                <p class="lead">A part of Indian IT Revolution</p>
+            </div>
+        </section>
+
+        <!-- Services section starts -->
+        <section id="services" class="bg-light py-5" style="padding-top: 100px;">
+            <div class="container">
+                <h2 class="text-center">Our Services</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="service">
+                            <h3>Sales and Service</h3>
+                            <p>We offer a wide range of computer products and services.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service">
-                        <h3>Computer Training</h3>
-                        <p>Computer Basics, Programming Languages, Tally etc.</p>
+                    <div class="col-md-4">
+                        <div class="service">
+                            <h3>Computer Training</h3>
+                            <p>Computer Basics, Programming Languages, Tally etc.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service">
-                        <h3>CBT Online Exam</h3>
-                        <p>Prepare for exams with our Computer-Based Testing platform.</p>
+                    <div class="col-md-4">
+                        <div class="service">
+                            <h3>CBT Online Exam</h3>
+                            <p>Prepare for exams with our Computer-Based Testing platform.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service">
-                        <h3>CCTV Installation </h3>
-                        <p>Enhance your home or office security with CCTV Camera.</p>
+                    <div class="col-md-4">
+                        <div class="service">
+                            <h3>CCTV Installation </h3>
+                            <p>Enhance your home or office security with CCTV Camera.</p>
+                        </div>
                     </div>
-                </div>
-                <!-- <div class="col-md-4">
+                    <!-- <div class="col-md-4">
                     <div class="service">
                         <h3>Home Security</h3>
                         <p>Enhance your home or office security with Home Security.</p>
                     </div>
                 </div> -->
-                <div class="col-md-4">
-                    <div class="service">
-                        <h3>Laptop Repairing</h3>
-                        <p>Enhance you laptop computer with our reliable repairing services</p>
+                    <div class="col-md-4">
+                        <div class="service">
+                            <h3>Laptop Repairing</h3>
+                            <p>Enhance you laptop computer with our reliable repairing services</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service">
-                        <h3>Printer Repairing</h3>
-                        <p>Quick and reliable printer reparing at affordable rates</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Products section starts -->
-    <section id="products" class="bg-light py-5">
-        <div class="container">
-            <h2 class="text-center">Products</h2>
-            <hr>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="product">
-                        <h3>Desktop Computers</h3>
-                        <p>Explore our range of high-performance desktop computers.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="product">
-                        <h3>Laptops</h3>
-                        <p>Discover our lightweight and powerful laptops.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="product">
-                        <h3>Monitors</h3>
-                        <p>Enhance your home or office quality with Full-HD Monitors.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="product">
-                        <h3>CCTV</h3>
-                        <p>Enhance your home or office security with CCTV.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="product">
-                        <h3>Printers</h3>
-                        <p>Enhance your home or office work with Printers.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="product">
-                        <h3>Speakers</h3>
-                        <p>Get wide range of Subwoofers and great quality speakers.</p>
+                    <div class="col-md-4">
+                        <div class="service">
+                            <h3>Printer Repairing</h3>
+                            <p>Quick and reliable printer reparing at affordable rates</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Products section starts -->
+        <section id="products" class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center">Products</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="product">
+                            <h3>Desktop Computers</h3>
+                            <p>Explore our range of high-performance desktop computers.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product">
+                            <h3>Laptops</h3>
+                            <p>Discover our lightweight and powerful laptops.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product">
+                            <h3>Monitors</h3>
+                            <p>Enhance your home or office quality with Full-HD Monitors.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product">
+                            <h3>CCTV</h3>
+                            <p>Enhance your home or office security with CCTV.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product">
+                            <h3>Printers</h3>
+                            <p>Enhance your home or office work with Printers.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product">
+                            <h3>Speakers</h3>
+                            <p>Get wide range of Subwoofers and great quality speakers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
-    <!-- Our Clients section starts -->
-<section id="clients" class="bg-light py-5">
-    <div class="container">
-        <h2 class="text-center">Our Clients</h2>
-        <hr>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="client-logo">
-                    <a href="https://www.gingerwebs.com/" target="_blank">
-                        <img class="client-logo-image" src="Images\clients_logo\ginger_bg.png" alt="Client Logo 1">
-                    </a>
+        <!-- Our Clients section starts -->
+        <section id="clients" class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center">Our Clients</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="client-logo">
+                            <a href="https://www.gingerwebs.com/" target="_blank">
+                                <img class="client-logo-image" src="Images\clients_logo\ginger_bg.png"
+                                    alt="Client Logo 1">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="client-logo">
+                            <a href="https://www.unilever.com/" target="_blank">
+                                <img class="client-logo-image" src="Images\clients_logo\hindustan_uniliver.png"
+                                    alt="Client Logo 2">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="client-logo">
+                            <a href="https://www.supergas.com/" target="_blank">
+                                <img class="client-logo-image" src="Images\clients_logo\SUPERGAS_bg.png"
+                                    alt="Client Logo 3">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="client-logo">
+                            <a href="https://www.tatametaliks.com/" target="_blank">
+                                <img class="client-logo-image" src="Images\clients_logo\tata_metalicks.png"
+                                    alt="Client Logo 4">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="client-logo">
+                            <a href="https://www.tatahitachi.co.in/" target="_blank">
+                                <img class="client-logo-image" src="Images\clients_logo\tata_hitachi.png"
+                                    alt="Client Logo 5">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="client-logo">
+                            <a href="https://www.wbidc.com/" target="_blank">
+                                <img class="client-logo-image" src="Images\clients_logo\WBIDC.png" alt="Client Logo 6">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="client-logo">
+                            <a href="https://www.unionbankofindia.co.in/" target="_blank">
+                                <img class="client-logo-image" src="Images\clients_logo\ubi_logo.png"
+                                    alt="Client Logo 7">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="client-logo">
+                            <a href="https://www.bankofbaroda.in/" target="_blank">
+                                <img class="client-logo-image" src="Images\clients_logo\bob_logo.png"
+                                    alt="Client Logo 8">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="client-logo">
+                            <a href="https://indianbank.in/" target="_blank">
+                                <img class="client-logo-image" src="Images\clients_logo\ib_logo.jpg"
+                                    alt="Client Logo 9">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Add more client logos as needed -->
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="client-logo">
-                    <a href="https://www.unilever.com/" target="_blank">
-                        <img class="client-logo-image" src="Images\clients_logo\hindustan_uniliver.png" alt="Client Logo 2">
-                    </a>
+        </section>
+
+        <!-- Contact Us section starts -->
+
+        <section id="contact" class="bg-light py-5">
+            <div class="container text-center">
+                <h2>Contact Us</h2>
+                <hr> <!-- Horizontal rule for separation -->
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Contact Details</h4>
+                        <ul class="list-unstyled">
+                            <li><strong>Address:</strong> Gurudwara Road, Nimpura, Kharagpur 721304</li>
+                            <li><strong>Phone:</strong> +91 9749-648-744, +91 9434-160-656 </li>
+                            &emsp;&emsp;&emsp;Please Call in Office Timings - <br>&emsp;&emsp;&emsp;10:00 A.M. - 2:00
+                            P.M. <br>&emsp;&emsp;&emsp;5:00 P.M. - 9:00 P.M. <br>&emsp;&emsp;&emsp;Thursday Closed
+                            <li><strong>Email:</strong> sashikgp@rediff.com, analogd6@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Send us a Message</h4>
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your Name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Your Email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="4" placeholder="Your Message" name="message"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-secondary">Send Message</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="client-logo">
-                    <a href="https://www.supergas.com/" target="_blank">
-                        <img class="client-logo-image" src="Images\clients_logo\SUPERGAS_bg.png" alt="Client Logo 3">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="client-logo">
-                    <a href="https://www.tatametaliks.com/" target="_blank">
-                        <img class="client-logo-image" src="Images\clients_logo\tata_metalicks.png" alt="Client Logo 4">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="client-logo">
-                    <a href="https://www.tatahitachi.co.in/" target="_blank">
-                        <img class="client-logo-image" src="Images\clients_logo\tata_hitachi.png" alt="Client Logo 5">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="client-logo">
-                    <a href="https://www.wbidc.com/" target="_blank">
-                        <img class="client-logo-image" src="Images\clients_logo\WBIDC.png" alt="Client Logo 6">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="client-logo">
-                    <a href="https://www.unionbankofindia.co.in/" target="_blank">
-                        <img class="client-logo-image" src="Images\clients_logo\ubi_logo.png" alt="Client Logo 7">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="client-logo">
-                    <a href="https://www.bankofbaroda.in/" target="_blank">
-                        <img class="client-logo-image" src="Images\clients_logo\bob_logo.png" alt="Client Logo 8">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="client-logo">
-                    <a href="https://indianbank.in/" target="_blank">
-                        <img class="client-logo-image" src="Images\clients_logo\ib_logo.jpg" alt="Client Logo 9">
-                    </a>
-                </div>
-            </div>
-            <!-- Add more client logos as needed -->
-        </div>
+        </section>
     </div>
-</section>
-
-    <!-- Contact Us section starts -->
-    
-    <section id="contact" class="bg-light py-5">
-        <div class="container text-center">
-            <h2>Contact Us</h2>
-            <hr> <!-- Horizontal rule for separation -->
-            
-            <div class="row">
-                <div class="col-md-6">
-                    <h4>Contact Details</h4>
-                <ul class="list-unstyled">
-                    <li><strong>Address:</strong> Gurudwara Road, Nimpura, Kharagpur 721304</li>
-                        <li><strong>Phone:</strong> +91 9749-648-744, +91 9434-160-656 </li>
-                        &emsp;&emsp;&emsp;Please Call in Office Timings - <br>&emsp;&emsp;&emsp;10:00 A.M. - 2:00 P.M. <br>&emsp;&emsp;&emsp;5:00 P.M. - 9:00 P.M. <br>&emsp;&emsp;&emsp;Thursday Closed
-                        <li><strong>Email:</strong> sashikgp@rediff.com, analogd6@gmail.com</li>
-                </ul>
-                </div>
-                <div class="col-md-6">
-                    <h4>Send us a Message</h4>
-                    <form action="#" method="post">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Your Email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" rows="4" placeholder="Your Message" name="message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-secondary">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
 
 
     <footer class="bg-dark text-white py-3">
@@ -282,6 +295,9 @@
             </div>
             <p>&copy; 2023 Analog & Digital. All rights reserved.</p>
         </div>
+        <div class="container text-left" id="total_visits">
+            Total Visits: <span id="visit-counter">0</span>
+        </div>
     </footer>
 
     <!-- Bootstrap scripts -->
@@ -289,57 +305,13 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        // Smooth scrolling for navigation links
-        $(document).ready(function() {
-            $('a.nav-link').on('click', function(event) {
-                if (this.hash !== '') {
-                    event.preventDefault();
-    
-                    var hash = this.hash;
-    
-                    $('html, body').animate(
-                        {
-                            scrollTop: $(hash).offset().top
-                        },
-                        500, // Adjust the duration as needed
-                        function() {
-                            window.location.hash = hash;
-                        }
-                    );
-                }
-            });
-        });
-    </script>
 
-<script>
-    // Show or hide the back-to-top button based on scrolling
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 100) {
-            $('#back-to-top').addClass('show');
-        } else {
-            $('#back-to-top').removeClass('show');
-        }
-    });
+    <a id="back-to-top" href="#" class="btn btn-secondary back-to-top" role="button">
+        <i class="fas fa-chevron-up"></i>
+    </a>
 
-    // Scroll to top with smooth transition
-    $('#back-to-top').click(function(e) {
-        e.preventDefault();
-        $('html, body').animate({ scrollTop: 0 }, 800); // Adjust the duration as needed
-    });
-</script>
 
-<a id="back-to-top" href="#" class="btn btn-secondary back-to-top" role="button">
-    <i class="fas fa-chevron-up"></i>
-</a>
-<script>
-    // Show loading screen overlay
-    document.body.classList.add('loading-overlay');
 
-    // Hide loading screen overlay when page is fully loaded
-    window.addEventListener('load', function() {
-        document.body.classList.remove('loading-overlay');
-    });
-</script>    
 </body>
+
 </html>

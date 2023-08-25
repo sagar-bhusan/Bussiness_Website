@@ -42,15 +42,19 @@ window.addEventListener('load', function() {
     document.body.classList.remove('loading-overlay');
 });
 
-  // Check if the visit count is stored in sessionStorage
-  if (sessionStorage.getItem("visits")) {
-    var visits = parseInt(sessionStorage.getItem("visits"));
-    document.getElementById("visit-counter").textContent = visits;
-} else {
-    var visits = 1;
-    sessionStorage.setItem("visits", visits);
-    document.getElementById("visit-counter").textContent = visits;
-}
+console.log("Script loaded");
+document.addEventListener("DOMContentLoaded", function () {
+    if (sessionStorage.getItem("visits")) {
+        var visits = parseInt(sessionStorage.getItem("visits"));
+        document.getElementById("visit-counter").textContent = visits;
+    } else {
+        var visits = 1;
+        sessionStorage.setItem("visits", visits);
+        document.getElementById("visit-counter").textContent = visits;
+    }
+});
+
+
 
 
 

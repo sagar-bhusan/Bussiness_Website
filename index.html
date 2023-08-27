@@ -5,9 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Analog & Digital</title>
+     <!-- Including the libraries -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+     <!-- Including Slick Carousel library -->
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+     <!-- The custom stylesheet -->
+     <link rel="stylesheet" href="style.css">
+     <!-- Including jQuery library -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include Slick Carousel JavaScript -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="myscript.js"></script>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -22,7 +32,7 @@
         <!-- Navigation bar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Analog & Digital<br>
+                <a class="navbar-brand" href="#home">Analog & Digital<br>
                     <h6>Kharagpur</h6>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -32,13 +42,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#services">Services</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#products">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact Us</a>
@@ -241,6 +254,29 @@
             </div>
         </section>
 
+        <!-- Gallery Section starts  -->
+        <section id="gallery" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Gallery</h2>
+                <hr>
+                <div class="gallery-slider">
+                    <div class="gallery-item">
+                        <img src="Images/gallery/img_1.jpg" alt="Image 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Images/gallery/img_2.jpg" alt="Image 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Images/gallery/img_3.jpg" alt="Image 3">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Images/gallery/img_4.jpg" alt="Image 4">
+                    </div>
+                    <!-- Add more gallery items as needed -->
+                </div>
+            </div>
+        </section>
+        
         <!-- Contact Us section starts -->
 
         <section id="contact" class="bg-light py-5">
@@ -292,7 +328,8 @@
                 <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 <!-- Add more social media icons as needed -->
             </div>
-            <p>&copy; 2023 Analog & Digital. All rights reserved.</p>
+            <p>&copy; 2023 Analog & Digital. All rights reserved.<br><b>Website designed by <a href="https://www.linkedin.com/in/sagar-bhusan-280175143/?originalSubdomain=in" target="_blank">Sagar</a></b></p>
+            
         </div>
         <!-- <div class="container text-left" id="total_visits">
             Total Visits: <span id="visit-counter">0</span>
@@ -311,6 +348,7 @@
 
     <script src="code.jquery.com_jquery-3.7.0.js"></script>
     <script src="myscript.js"></script>
+   
 
 </body>
 

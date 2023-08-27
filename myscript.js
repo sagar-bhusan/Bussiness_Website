@@ -31,7 +31,7 @@ $(window).scroll(function () {
 // Scroll to top with smooth transition
 $('#back-to-top').click(function (e) {
     e.preventDefault();
-    $('html, body').animate({ scrollTop: 0 }, 800); // Adjust the duration as needed
+    $('html, body').animate({ scrollTop: 0 }, 1000); // Adjust the duration as needed
 });
 
 // Show loading screen overlay
@@ -41,6 +41,28 @@ $('#back-to-top').click(function (e) {
 window.addEventListener('load', function () {
     document.body.classList.remove('loading-overlay');
 });
+
+
+// JavaScript code for gallery slider movement
+    $(document).ready(function() {
+        $('.gallery-slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            centerMode: true,
+            centerPadding: '0',
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    });
+
 
 
 

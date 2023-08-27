@@ -43,17 +43,29 @@ window.addEventListener('load', function() {
 });
 
 //total visit storage jquery
-console.log("Before visit count update:", sessionStorage.getItem("visits"));
-if (sessionStorage.getItem("visits")) {
-    var visits = parseInt(sessionStorage.getItem("visits"));
-    document.getElementById("visit-counter").textContent = visits;
-} else {
-    var visits = 1;
-    sessionStorage.setItem("visits", visits);
-    document.getElementById("visit-counter").textContent = visits;
-}
+const visitCountUrl = 'https://raw.githubusercontent.com/sagar-bhusan/Bussiness_Website/main/visit-count.json';
 
-console.log("After visit count update:", sessionStorage.getItem("visits"));
+fetch(visitCountUrl)
+    .then(response => response.json())
+    .then(data => {
+        let count = data.count;
+        count++;
+        data.count = count;
+
+        // Update the count on the webpage
+        document.getElementById("visit-counter").textContent = count;
+
+        // Update the JSON file on GitHub
+        fetch(visitCountUrl, {
+            method: 'PUT',
+            body: JSON.stringify(data),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+    })
+    .catch(error => console.error('Error fetching visit count:', error));
+
 
 
 

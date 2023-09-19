@@ -1,3 +1,35 @@
+//Hero text 
+function changeHeroText() {
+    const heroText = document.getElementById("hero-text");
+    const texts = ["Welcome to", "Hello from", "Greetings from"];
+    let index = 0;
+
+    setInterval(function() {
+      heroText.classList.add("fade-out");
+      setTimeout(function() {
+        heroText.textContent = texts[index];
+        heroText.classList.remove("fade-out");
+      }, 500);
+      index = (index + 1) % texts.length;
+    }, 5000);
+  }
+
+  changeHeroText();
+
+
+
+
+// //Changing text below hero image
+// const changingText = document.getElementById("changing-text");
+//     const texts = ["We are the future.", "We are the change.", "We are the ones who will make a difference."];
+//     let index = 0;
+
+//     setInterval(function() {
+//       changingText.textContent = texts[index];
+//       index = (index + 1) % texts.length;
+//     }, 5000);
+
+
 // Smooth scrolling for navigation links
 $(document).ready(function () {
     $('a.nav-link').on('click', function (event) {
@@ -83,18 +115,6 @@ window.onresize = function (event) {
     reloadSlider();
 };
 
-function changeHeroText() {
-    const heroText = document.getElementById("hero-text");
-    const texts = ["Welcome to", "Hello from", "Greetings from"];
-    let index = 0;
-  
-    setInterval(function() {
-      heroText.textContent = texts[index];
-      index = (index + 1) % texts.length;
-    }, 5000);
-  }
-  
-  changeHeroText();
 
 
 

@@ -83,7 +83,18 @@ window.onresize = function (event) {
     reloadSlider();
 };
 
-
+function changeHeroText() {
+    const heroText = document.getElementById("hero-text");
+    const texts = ["Welcome to", "Hello from", "Greetings from"];
+    let index = 0;
+  
+    setInterval(function() {
+      heroText.textContent = texts[index];
+      index = (index + 1) % texts.length;
+    }, 5000);
+  }
+  
+  changeHeroText();
 
 
 

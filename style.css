@@ -31,6 +31,19 @@ p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+
+.navbar-nav .nav-link.active {
+    color: white; /* Change the color to your desired active color */
+    /* Add any other styling for active links */
+}
+
+.btn-transparent {
+    border-color: white;
+    background-color: black;
+    color: white; /* Change the text color if needed */
+}
+
+
 /* Add other font-related styling as needed */
 
 .display-4 {
@@ -334,6 +347,21 @@ footer {
     .slider{
         height: 400px;
     }
+}
+
+
+/* Change the color of links to white */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: lightgray;
 }
 
 

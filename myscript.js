@@ -30,6 +30,22 @@ function changeHeroText() {
 //     }, 5000);
 
 
+// To add active links color
+const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+// Loop through each link and add a click event listener
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        // Remove the "active" class from all links
+        navLinks.forEach(navLink => navLink.classList.remove('active'));
+        
+        // Add the "active" class to the clicked link
+        link.classList.add('active');
+    });
+});
+
+
+
 // Smooth scrolling for navigation links
 $(document).ready(function () {
     $('a.nav-link').on('click', function (event) {

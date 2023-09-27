@@ -7,3 +7,4 @@ if (localStorage.getItem("visits")) {
     localStorage.setItem("visits", visits);
     document.getElementById("visit-counter").textContent = visits;
 }
+console.log("Visit count code is running");

@@ -28,9 +28,8 @@ body {
     color: var(--text-color) !important;
 }
 
-.custom-navbar-toggler{
-    background-color: var(--background-color) !important;
-    color: var(--text-color) !important;
+.navbar-toggler-icon{
+    
 }
 
 /* Custom CSS for changing the footer background color and text color */

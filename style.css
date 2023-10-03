@@ -45,6 +45,7 @@ body {
 
 .custom-button{
     background-color: var(--primary-color) !important;
+    border-color:var(--background-color) ;
     color: white;
 }
 #about{
@@ -102,7 +103,7 @@ p {
 
 .btn-transparent {
     border-color: var(--primary-color);
-    background-color: black;
+    /* background-color: var(--primary-color); */
     color: white; /* Change the text color if needed */
 }
 

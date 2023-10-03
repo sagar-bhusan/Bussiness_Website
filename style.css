@@ -1,3 +1,11 @@
+/* Color palette variables */
+:root {
+    --primary-color: #0C356A; /* Change this to your primary color */
+    --secondary-color: #279EFF; /* Change this to your secondary color */
+    --text-color: #0C356A; /* Change this to your text color */
+    --background-color: #D5FFD0; /* Change this to your background color */
+}
+
 /* Styles for new sections and services */
 .services,
 .products,
@@ -9,36 +17,88 @@
 
 /* Update font styles for the entire webpage */
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif !important;
+    background-color: var(--background-color);
+    color: var(--text-color) !important;
+    
 }
+
+.custom-navbar {
+    background-color: var(--primary-color) !important;
+    color: var(--text-color) !important;
+}
+
+.custom-navbar-toggler{
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+}
+
+/* Custom CSS for changing the footer background color and text color */
+.custom-footer {
+    background-color: var(--primary-color) !important; /* Change to your desired background color */
+    color: white; /* Change to your desired text color */
+    padding: 15px 0; /* Adjust padding as needed */
+}
+
+.custom-button{
+    background-color: var(--primary-color) !important;
+    color: white;
+}
+#about{
+    background-color: var(--background-color) !important;
+    color: white;
+}
+
+#about h2 {
+    color: var(--text-color); /* Change to your desired heading color */
+}
+
+#about p,b{
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+
+/* Style the social media icons */
+.custom-footer .social-icons a {
+    color: white; /* Change icon color */
+    margin-right: 10px; /* Add spacing between icons if needed */
+}
+
+/* Style the social media icons on hover (optional) */
+.custom-footer .social-icons a:hover {
+    color: var(--secondary-color); /* Change hover color */
+    transition: color 0.3s; /* Add smooth transition effect */
+}
+
 
 /* Update font styles for headings */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
 }
 
 /* Update font styles for paragraphs */
 p {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
 }
 
 /* Update font styles for navigation links */
 .navbar-nav .nav-link {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
 }
 
 .navbar-brand{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
 }
 
 
 .navbar-nav .nav-link.active {
-    color: white; /* Change the color to your desired active color */
+    color: var(--background-color); /* Change the color to your desired active color */
     /* Add any other styling for active links */
 }
 
 .btn-transparent {
-    border-color: white;
+    border-color: var(--primary-color);
     background-color: black;
     color: white; /* Change the text color if needed */
 }
@@ -64,7 +124,7 @@ p {
 
 .service,
 .product {
-    background-color: #fff;
+    background-color: white;
     border-radius: 5px;
     padding: 1rem;
     margin-bottom: 1rem;
@@ -76,13 +136,6 @@ p {
 /* Responsive design */
 @media (max-width: 768px) {
     /* Adjust styles for smaller screens */
-}
-
-/* Custom styles */
-.navbar {
-    background-color: transparent;
-    /* Make the navbar background transparent */
-
 }
 
 
@@ -130,9 +183,9 @@ p {
 .product:hover {
     transform: scale(1.02);
     /* Zoom in effect */
-    background-color: #939aa0;
+    background-color: var(--secondary-color);
     /* Change background color on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 12px var(--primary-color);
     /* Add shadow effect */
     transition: transform 0.2s, background-color 0.5s, box-shadow 0.8s;
     /* Transition properties */
@@ -175,7 +228,7 @@ p {
 }
 
 .social-icons a:hover {
-    color: #3498db;
+    color: var(--secondary-color);
     /* Change the color on hover */
 }
 
@@ -203,7 +256,7 @@ p {
 
 /* Style for the About Us section */
 #about {
-    background-color: #f8f8f8;
+    /* background-color: #f8f8f8; */
     padding: 40px 0;
 }
 
@@ -230,7 +283,6 @@ p {
 #about p {
     font-size: 16px;
     line-height: 1.6;
-    color: #555;
 }
 
 @media (max-width: 767px) {
@@ -324,7 +376,7 @@ footer {
     position: absolute;
     bottom: 10px;
     left: 0;
-    color: #fff;
+    color: var(--text-color);
     width: 100%;
     margin: 0;
     padding: 0;
@@ -335,7 +387,7 @@ footer {
     list-style: none;
     width: 7px;
     height: 7px;
-    background-color: #fff;
+    background-color: var(--text-color);
     margin: 5px;
     border-radius: 20px;
     transition: 0.5s;
@@ -361,7 +413,7 @@ a:visited {
 }
 
 a:hover {
-    color: lightgray;
+    color: var(--background-color);
 }
 
 

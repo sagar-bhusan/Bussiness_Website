@@ -28,8 +28,9 @@ body {
     color: var(--text-color) !important;
 }
 
-.navbar-toggler-icon{
-    
+.navbar-toggler .navbar-toggler-icon img {
+    width: 40px; /* Adjust the width to your desired size */
+    height: auto; /* Automatically adjust the height */
 }
 
 /* Custom CSS for changing the footer background color and text color */

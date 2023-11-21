@@ -17,6 +17,29 @@ function changeHeroText() {
   changeHeroText();
 
 
+//   navbar visible on scroll down on jquery
+  $(document).ready(function () {
+    var navbar = $(".custom-navbar");
+
+    var timeout;
+
+    $(window).scroll(function () {
+        clearTimeout(timeout);
+
+        timeout = setTimeout(function () {
+            var scrollPosition = $(this).scrollTop();
+
+            if (scrollPosition > 100) {
+                navbar.addClass("show-on-scroll").removeClass("hide-on-scroll");
+            } else {
+                navbar.removeClass("show-on-scroll").addClass("hide-on-scroll");
+            }
+        }, 100); // Adjust the delay time in milliseconds (e.g., 300 for 300ms)
+    });
+});
+
+
+
 
 
 // //Changing text below hero image

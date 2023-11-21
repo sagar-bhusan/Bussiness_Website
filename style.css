@@ -22,6 +22,20 @@ body {
     color: var(--text-color) !important;
     
 }
+/* nav bar hide on scroll styles */
+.hide-on-scroll {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    background-color: transparent;
+}
+
+.show-on-scroll {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s ease-in-out;
+}
+
 
 .custom-navbar {
     background-color: var(--primary-color) !important;

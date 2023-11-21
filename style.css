@@ -33,7 +33,7 @@ body {
 .show-on-scroll {
     opacity: 1;
     visibility: visible;
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 

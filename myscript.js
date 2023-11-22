@@ -41,7 +41,6 @@ function changeHeroText() {
 
 
 
-
 // //Changing text below hero image
 // const changingText = document.getElementById("changing-text");
 //     const texts = ["We are the future.", "We are the change.", "We are the ones who will make a difference."];

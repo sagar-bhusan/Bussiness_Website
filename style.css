@@ -488,6 +488,7 @@ a:hover {
 
 .team-member h3 {
     margin-top: 15px;
+    margin-bottom: 0px;
     font-size: 1.5em;
     color: var(--text-color);
 }

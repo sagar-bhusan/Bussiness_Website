@@ -469,4 +469,43 @@ a:hover {
 }
 
 
+/* Our Team Section Styles */
+#our-team {
+    background-color: var(--background-color);
+    padding: 80px 0;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    max-width: 30%;
+    height: 30%;
+}
+
+.team-member h3 {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-size: 1.5em;
+    color: var(--text-color);
+}
+
+.team-member p {
+    color: #777;
+}
+
+/* Animate.css Integration */
+.animated {
+    animation-duration: 1s;
+}
+
+/* Adjust animation delay for each team member */
+.animate__fadeInUp {
+    animation-delay: 0.2s;
+}
+
+
 

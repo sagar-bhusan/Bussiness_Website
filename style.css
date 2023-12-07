@@ -17,11 +17,17 @@
 
 /* Update font styles for the entire webpage */
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
     background-color: var(--background-color);
-    color: var(--text-color) !important;
+    color: var(--text-color);
     
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+  }
 /* nav bar hide on scroll styles */
 .hide-on-scroll {
     opacity: 0;

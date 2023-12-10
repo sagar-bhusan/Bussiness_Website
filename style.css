@@ -532,25 +532,36 @@ a:hover {
 }
 
 /* Styles for the Computer Training service card */
-.service {
-    background-color: var(--secondary-color); /* Background color for the service card */
+.service ,
+.product {
+    background-color: var(--primary-color); /* Background color for the service card */
     color: var(--secondary-text-color); /* Text color */
     padding: 20px; /* Add padding for better spacing */
     border-radius: 10px; /* Add rounded corners for a modern look */
     text-align: center; /* Center align text */
 }
 
-.service h3 {
+.service h3,
+.product h3 {
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 10px; /* Adjust space between title and description */
 }
 
-.service p {
+.service p,
+.product p {
     font-style: italic; /* Italicize the description for emphasis */
 }
 
-.services h2{
+.services h2,
+.product h2{
     font-weight: bold;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}

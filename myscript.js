@@ -153,6 +153,10 @@ window.onresize = function (event) {
     reloadSlider();
 };
 
+// to prevent save images(r click)
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+});
 
 
 

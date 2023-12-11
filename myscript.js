@@ -1,7 +1,7 @@
 //Hero text 
 function changeHeroText() {
     const heroText = document.getElementById("hero-text");
-    const texts = ["Welcome to", "Hello from", "Greetings from"];
+    const texts = ["Welcome to", "Hello from", "Namaste from"];
     let index = 0;
 
     setInterval(function() {

@@ -125,6 +125,8 @@ let lengthItems = items.length - 1;
 let active = 0;
 let isPaused = false;
 let refreshInterval;
+let touchStartX = 0;
+let touchEndX = 0;
 
 next.onclick = function () {
     if (!isPaused) {
@@ -157,6 +159,34 @@ dots.forEach((li, key) => {
         reloadSlider();
     })
 });
+
+slider.addEventListener('touchstart', (e) => {
+    touchStartX = e.touches[0].clientX;
+});
+
+slider.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].clientX;
+    handleSwipe();
+});
+
+function handleSwipe() {
+    const swipeThreshold = 50; // Adjust this value as needed
+    const swipeDistance = touchEndX - touchStartX;
+
+    if (swipeDistance > swipeThreshold) {
+        // Swipe left
+        if (!isPaused) {
+            active = active - 1 >= 0 ? active - 1 : lengthItems;
+            reloadSlider();
+        }
+    } else if (swipeDistance < -swipeThreshold) {
+        // Swipe right
+        if (!isPaused) {
+            active = active + 1 <= lengthItems ? active + 1 : 0;
+            reloadSlider();
+        }
+    }
+}
 
 function reloadSlider() {
     slider.style.left = -items[active].offsetLeft + 'px';

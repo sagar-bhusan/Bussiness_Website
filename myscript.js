@@ -1,7 +1,7 @@
 //Hero text 
 function changeHeroText() {
     const heroText = document.getElementById("hero-text");
-    const texts = ["Welcome to", "Hello from", "Greetings from"];
+    const texts = ["Welcome to", "Hello from", "Namaste from"];
     let index = 0;
 
     setInterval(function() {
@@ -119,39 +119,103 @@ let items = document.querySelectorAll('.slider .list .item');
 let next = document.getElementById('next');
 let prev = document.getElementById('prev');
 let dots = document.querySelectorAll('.slider .dots li');
+let pauseButton = document.getElementById('pause');
 
 let lengthItems = items.length - 1;
 let active = 0;
+let isPaused = false;
+let refreshInterval;
+let touchStartX = 0;
+let touchEndX = 0;
+
 next.onclick = function () {
-    active = active + 1 <= lengthItems ? active + 1 : 0;
-    reloadSlider();
+    if (!isPaused) {
+        active = active + 1 <= lengthItems ? active + 1 : 0;
+        reloadSlider();
+    }
 }
+
 prev.onclick = function () {
-    active = active - 1 >= 0 ? active - 1 : lengthItems;
-    reloadSlider();
+    if (!isPaused) {
+        active = active - 1 >= 0 ? active - 1 : lengthItems;
+        reloadSlider();
+    }
 }
-let refreshInterval = setInterval(() => { next.click() }, 3000);
-function reloadSlider() {
-    slider.style.left = -items[active].offsetLeft + 'px';
-    let last_active_dot = document.querySelector('.slider .dots li.active');
-    last_active_dot.classList.remove('active');
-    dots[active].classList.add('active');
-
-    clearInterval(refreshInterval);
-    refreshInterval = setInterval(() => { next.click() }, 3000);
 
 
+pauseButton.onclick = function () {
+    isPaused = !isPaused;
+    togglePauseButton();
+    
+    if (!isPaused) {
+        refreshInterval = setInterval(() => { next.click() }, 3000);
+    }
 }
+
 
 dots.forEach((li, key) => {
     li.addEventListener('click', () => {
         active = key;
         reloadSlider();
     })
-})
+});
+
+slider.addEventListener('touchstart', (e) => {
+    touchStartX = e.touches[0].clientX;
+});
+
+slider.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].clientX;
+    handleSwipe();
+});
+
+function handleSwipe() {
+    const swipeThreshold = 50; // Adjust this value as needed
+    const swipeDistance = touchEndX - touchStartX;
+
+    if (swipeDistance > swipeThreshold) {
+        // Swipe left
+        if (!isPaused) {
+            active = active - 1 >= 0 ? active - 1 : lengthItems;
+            reloadSlider();
+        }
+    } else if (swipeDistance < -swipeThreshold) {
+        // Swipe right
+        if (!isPaused) {
+            active = active + 1 <= lengthItems ? active + 1 : 0;
+            reloadSlider();
+        }
+    }
+}
+
+function reloadSlider() {
+    slider.style.left = -items[active].offsetLeft + 'px';
+    let lastActiveDot = document.querySelector('.slider .dots li.active');
+    lastActiveDot.classList.remove('active');
+    dots[active].classList.add('active');
+
+    clearInterval(refreshInterval);
+
+    if (!isPaused) {
+        refreshInterval = setInterval(() => { next.click() }, 3000);
+    }
+}
+
+
+function togglePauseButton() {
+    pauseButton.textContent = isPaused ? '||' : '<>';
+    pauseButton.style.display = 'inline-block'; // Always show the button, but update text
+}
+
+
+// Initial setup
+togglePauseButton();
+refreshInterval = setInterval(() => { next.click() }, 3000);
+
 window.onresize = function (event) {
     reloadSlider();
 };
+
 
 // to prevent save images(r click)
 document.addEventListener('contextmenu', function (e) {

@@ -55,7 +55,12 @@ body {
 .custom-navbar {
     background-color: var(--primary-color) !important;
     color: var(--text-color) !important;
+    font-size: 17px;
+    font-weight: bolder;
 }
+
+
+
 
 .navbar-toggler .navbar-toggler-icon img {
     width: 40px; /* Adjust the width to make it bigger */
@@ -143,11 +148,13 @@ p {
     font-weight: bold;
     text-align: left;
     color: white;
+    text-shadow: 5px 5px 3px rgba(12,53,106, 0.9);
 }
 
 .lead {
     font-size: 15px;
     text-align: left;
+    text-shadow: 5px 5px 4px rgba(12,53,106, 0.9);
 }
 
 /* .lead-1{
@@ -419,7 +426,7 @@ footer {
     left:0;
     top: 0;
     display: flex;
-    transition: 1s;
+    transition: left 1s ease-in-out;
 }
 
 .slider .list img{
@@ -429,7 +436,11 @@ footer {
     object-fit: cover;
 }
 
-.slider .buttons{
+button {
+    cursor: pointer;
+  }
+
+.buttons{
     position: absolute;
     top: 45%;
     left: 5%;
@@ -438,7 +449,7 @@ footer {
     justify-content: space-between;
 }
 
-.slider .buttons button{
+.buttons button{
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -447,8 +458,11 @@ footer {
     border: none;
     font-family: monospace;
     font-weight: bold;
+    
 }
-.slider .dots{
+
+
+.dots{
     position: absolute;
     bottom: 10px;
     left: 0;
@@ -458,8 +472,9 @@ footer {
     padding: 0;
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
-.slider .dots li{
+.dots li{
     list-style: none;
     width: 7px;
     height: 7px;
@@ -468,8 +483,9 @@ footer {
     border-radius: 20px;
     transition: 0.5s;
 }
-.slider .dots li.active{
+.dots li.active{
     width: 30px;
+    cursor: pointer;
 }
 @media screen and (max-width: 768px){
     .slider{

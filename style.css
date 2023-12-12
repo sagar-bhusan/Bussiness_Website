@@ -183,6 +183,10 @@ body {
     opacity: 1;
 }
 
+.product:hover .hover-image{
+    opacity: 1;
+}
+
 /* Ripple effect */
 .service:after {
     content: "";
@@ -194,6 +198,21 @@ body {
 }
 
 .service:hover:after {
+    width: 100%;
+    padding-top: 100%;
+    /* background: rgba(255, 255, 255, 0.3); */
+    transform: scale(3);
+}
+.product:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.5s ease;
+    pointer-events: none;
+}
+
+.product:hover:after {
     width: 100%;
     padding-top: 100%;
     /* background: rgba(255, 255, 255, 0.3); */

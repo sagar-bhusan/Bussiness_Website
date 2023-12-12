@@ -218,9 +218,9 @@ window.onresize = function (event) {
 
 
 // to prevent save images(r click)
-// document.addEventListener('contextmenu', function (e) {
-//     e.preventDefault();
-// });
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+});
 
 
 

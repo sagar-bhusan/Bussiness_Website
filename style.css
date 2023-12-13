@@ -111,22 +111,8 @@ body {
 
 
 /* Update font styles for headings */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
-}
-
-/* Update font styles for paragraphs */
-p {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
-}
-
-/* Update font styles for navigation links */
-.navbar-nav .nav-link {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
-}
-
-.navbar-brand{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans','Open Sans';
 }
 
 
@@ -197,6 +183,10 @@ p {
     opacity: 1;
 }
 
+.product:hover .hover-image{
+    opacity: 1;
+}
+
 /* Ripple effect */
 .service:after {
     content: "";
@@ -208,6 +198,21 @@ p {
 }
 
 .service:hover:after {
+    width: 100%;
+    padding-top: 100%;
+    /* background: rgba(255, 255, 255, 0.3); */
+    transform: scale(3);
+}
+.product:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.5s ease;
+    pointer-events: none;
+}
+
+.product:hover:after {
     width: 100%;
     padding-top: 100%;
     /* background: rgba(255, 255, 255, 0.3); */

@@ -18,7 +18,7 @@
 
 /* Update font styles for the entire webpage */
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans','Open Sans';
     background-color: var(--background-color);
     color: var(--text-color);
     
@@ -109,10 +109,8 @@ body {
     transition: color 0.3s; /* Add smooth transition effect */
 }
 
-
-/* Update font styles for headings */
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans','Open Sans';
+    
 }
 
 
@@ -585,4 +583,8 @@ a:hover {
   'wght' 400,
   'GRAD' 0,
   'opsz' 24
+}
+
+a:hover{
+    text-decoration: none;
 }

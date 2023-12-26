@@ -257,6 +257,30 @@ body {
     opacity: 0;
   }
 
+  #about-cards h5,h4
+  {
+    color: var(--secondary-text-color);
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  #about-cards p,ol{
+    color: var(--secondary-text-color);
+    margin: auto;
+    text-align: justify;
+  }
+  #about-cards .card-body{
+    padding: 30px;
+    /* height: 20rem;
+    width:fit-content; */
+}
+
+#about-cards .card{
+    background-color: var(--primary-color);
+    height: 25rem;
+    padding-top: auto;
+}
 /* Adjust the padding of the content */
 .py-custom {
     padding-top: 100px;

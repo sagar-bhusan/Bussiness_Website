@@ -38,20 +38,6 @@ function changeHeroText() {
     });
 });
 
-
-
-
-// //Changing text below hero image
-// const changingText = document.getElementById("changing-text");
-//     const texts = ["We are the future.", "We are the change.", "We are the ones who will make a difference."];
-//     let index = 0;
-
-//     setInterval(function() {
-//       changingText.textContent = texts[index];
-//       index = (index + 1) % texts.length;
-//     }, 5000);
-
-
 // To add active links color
 const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 
@@ -102,14 +88,6 @@ $(window).scroll(function () {
 $('#back-to-top').click(function (e) {
     e.preventDefault();
     $('html, body').animate({ scrollTop: 0 }, 1000); // Adjust the duration as needed
-});
-
-// Show loading screen overlay
-//document.body.classList.add('loading-overlay');
-
-// Hide loading screen overlay when page is fully loaded
-window.addEventListener('load', function () {
-    document.body.classList.remove('loading-overlay');
 });
 
 

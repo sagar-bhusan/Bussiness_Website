@@ -281,6 +281,24 @@ body {
     height: 25rem;
     padding-top: auto;
 }
+
+#about-cards .col-md-4 {
+    margin-bottom: 20px;
+}
+
+
+.card 
+{
+    transition: transform 0.3s ease-in-out; /* Adjust the duration and easing as needed */
+}
+
+.card:hover 
+{
+    transform: scale(1.05); /* Adjust the scale factor for zoom in/out */
+}
+
+
+
 /* Adjust the padding of the content */
 .py-custom {
     padding-top: 100px;

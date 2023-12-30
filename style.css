@@ -257,7 +257,7 @@ body {
     opacity: 0;
   }
 
-  #about-cards h5,h4
+  #about-cards h4
   {
     color: var(--secondary-text-color);
     font-weight: bolder;

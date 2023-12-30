@@ -257,6 +257,48 @@ body {
     opacity: 0;
   }
 
+  #about-cards h5,h4
+  {
+    color: var(--secondary-text-color);
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  #about-cards p,ol{
+    color: var(--secondary-text-color);
+    margin: auto;
+    text-align: justify;
+  }
+  #about-cards .card-body{
+    padding: 30px;
+    /* height: 20rem;
+    width:fit-content; */
+}
+
+#about-cards .card{
+    background-color: var(--primary-color);
+    height: 25rem;
+    padding-top: auto;
+}
+
+#about-cards .col-md-4 {
+    margin-bottom: 20px;
+}
+
+
+.card 
+{
+    transition: transform 0.3s ease-in-out; /* Adjust the duration and easing as needed */
+}
+
+.card:hover 
+{
+    transform: scale(1.05); /* Adjust the scale factor for zoom in/out */
+}
+
+
+
 /* Adjust the padding of the content */
 .py-custom {
     padding-top: 100px;

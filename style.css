@@ -96,6 +96,11 @@ body {
     font-size: 16px;
 }
 
+.link{
+text-decoration: underline;
+font-weight: bold;
+}
+
 
 /* Style the social media icons */
 .custom-footer .social-icons a {
@@ -443,6 +448,10 @@ body {
 footer {
     flex-shrink: 0;
     /* Prevent the footer from shrinking */
+}
+
+.translate{
+    text-align: center;
 }
 
 /* Styles for the total visits counter */

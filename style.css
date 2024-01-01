@@ -639,3 +639,14 @@ a:hover {
 a:hover{
     text-decoration: none;
 }
+
+/* new year pop up starts (LIMITED TIME UPDATE ONLY) */
+.custom-confirm-button {
+    background-color: var(--primary-color) !important; 
+    color: #fff !important; 
+}
+
+.custom-title{
+    color: var(--secondary-text-color);
+    font-weight: bold;
+}

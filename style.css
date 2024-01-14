@@ -650,3 +650,9 @@ a:hover{
     color: var(--secondary-text-color);
     font-weight: bold;
 }
+
+#about h1{
+    color: var(--text-color);
+    margin-top: 100px;
+    text-align: center;
+}

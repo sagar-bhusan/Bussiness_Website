@@ -201,29 +201,29 @@ document.addEventListener('contextmenu', function (e) {
 });
 
 // custom pop up for new year (LIMITED TIME UPDATE ONLY)
-    document.addEventListener('DOMContentLoaded', function () {
-        Swal.fire({
-            title: '<span class="custom-title">Team Analog & Digital wishes you Happy New Year 2024 !</span>',
-            html:``,
-            showCloseButton: false,
-            showCancelButton: false ,
-            focusConfirm: true,
-            confirmButtonText:`<i class="fa fa-thumbs-up"></i> Explore Website`,
-            confirmButtonArialLabel: "Thumbs up,great!",
-            customClass:{
-                confirmButton: 'custom-confirm-button'
+    // document.addEventListener('DOMContentLoaded', function () {
+    //     Swal.fire({
+    //         title: '<span class="custom-title">Team Analog & Digital wishes you Happy New Year 2024 !</span>',
+    //         html:``,
+    //         showCloseButton: false,
+    //         showCancelButton: false ,
+    //         focusConfirm: true,
+    //         confirmButtonText:`<i class="fa fa-thumbs-up"></i> Explore Website`,
+    //         confirmButtonArialLabel: "Thumbs up,great!",
+    //         customClass:{
+    //             confirmButton: 'custom-confirm-button'
                 
-            },
-            titleClass:'custom-title',
-            width: 600,
-            padding: "3em",
-            color: "#ffffff",
-            background: "#fff url(Images/party-38.gif)",
-            backdrop: `
-                rgba(12, 53, 106, 0.5)
-            `
-          });
-    });
+    //         },
+    //         titleClass:'custom-title',
+    //         width: 600,
+    //         padding: "3em",
+    //         color: "#ffffff",
+    //         background: "#fff url(Images/party-38.gif)",
+    //         backdrop: `
+    //             rgba(12, 53, 106, 0.5)
+    //         `
+    //       });
+    // });
 
 
 

@@ -11,7 +11,6 @@
 .services,
 .products,
 .contact {
-    background-color: #f8f8f8;
     padding: 2rem;
     margin: 2rem 0;
 }
@@ -22,6 +21,12 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     
+}
+
+#about h1{
+    color: var(--text-color);
+    margin-top: 100px;
+    text-align: center;
 }
 
 
@@ -63,18 +68,18 @@ body {
 
 
 .navbar-toggler .navbar-toggler-icon img {
-    width: 40px; /* Adjust the width to make it bigger */
-        height: 40px; /* Adjust the height to make it bigger */
-        object-fit: contain; /* Maintain aspect ratio and fit image */
-        padding: 5px; /* Add padding for a cleaner look (optional) */
-        box-shadow: 0px 0px 5px rgb(248, 248, 248); /* Add a subtle shadow (optional) */
+    width: 40px; 
+        height: 40px; 
+        object-fit: contain; 
+        padding: 5px; 
+        box-shadow: 0px 0px 5px rgb(248, 248, 248); 
 }
 
 /* Custom CSS for changing the footer background color and text color */
 .custom-footer {
-    background-color: var(--primary-color) !important; /* Change to your desired background color */
-    color: white; /* Change to your desired text color */
-    padding: 15px 0; /* Adjust padding as needed */
+    background-color: var(--primary-color) !important; 
+    color: white; 
+    padding: 15px 0;
 }
 
 .custom-button{
@@ -88,7 +93,7 @@ body {
 }
 
 #about h2 {
-    color: var(--text-color); /* Change to your desired heading color */
+    color: var(--text-color); 
 }
 
 #about p,b{
@@ -113,11 +118,6 @@ font-weight: bold;
     color: var(--secondary-color); /* Change hover color */
     transition: color 0.3s; /* Add smooth transition effect */
 }
-
-body {
-    
-}
-
 
 .navbar-nav .nav-link.active {
     color: var(--background-color); /* Change the color to your desired active color */
@@ -150,6 +150,27 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
 } */
+
+
+#services
+{
+        background-image: url("Images/services/bg_image_services.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-blend-mode:multiply;
+        background-position: center; 
+        background-color: rgba(255, 255, 255, 2);
+}
+
+#contact{
+    background-image: url("Images/contact_us/bg_contact_us.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        /* background-blend-mode:; */
+        background-position: center; 
+        background-color: rgba(255, 255, 255, 0.7);
+
+}
 
 .service
  {
@@ -640,19 +661,5 @@ a:hover{
     text-decoration: none;
 }
 
-/* new year pop up starts (LIMITED TIME UPDATE ONLY) */
-/* .custom-confirm-button {
-    background-color: var(--primary-color) !important; 
-    color: #fff !important; 
-}
 
-.custom-title{
-    color: var(--secondary-text-color);
-    font-weight: bold;
-}
 
-#about h1{
-    color: var(--text-color);
-    margin-top: 100px;
-    text-align: center;
-} */

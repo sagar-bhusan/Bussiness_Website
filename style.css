@@ -162,14 +162,33 @@ font-weight: bold;
         background-color: rgba(255, 255, 255, 2);
 }
 
-#contact{
-    background-image: url("Images/contact_us/bg_contact_us.jpg");
+#our-team{
+        background-image: url("Images/team_images/bg_our_team.jpg");
         background-size: cover;
         background-attachment: fixed;
         /* background-blend-mode:; */
         background-position: center; 
         background-color: rgba(255, 255, 255, 0.7);
 
+}
+
+#contact{
+        background-image: url("Images/contact_us/bg_contact_us.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        /* background-blend-mode:; */
+        background-position: center center; 
+        background-color: rgba(255, 255, 255, 10);
+
+}
+
+#clients{
+        background-image: url("Images/clients_logo/bg_our_clients.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-blend-mode:multiply;
+        background-position: center; 
+        background-color: rgba(255, 255, 255, 0.9);
 }
 
 .service

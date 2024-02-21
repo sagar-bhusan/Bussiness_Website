@@ -148,7 +148,7 @@ slider.addEventListener('touchend', (e) => {
 });
 
 function handleSwipe() {
-    const swipeThreshold = 50; // Adjust this value as needed
+    const swipeThreshold = 50; 
     const swipeDistance = touchEndX - touchStartX;
 
     if (swipeDistance > swipeThreshold) {

@@ -1,0 +1,29 @@
+
+/static/*
+  Cache-Control: public
+  Cache-Control: max-age=604800
+
+/style.css
+  Cache-Control: public
+  Cache-Control: max-age=604800
+
+/myscript.js
+  Cache-Control: public
+  Cache-Control: max-age=604800
+
+
+/code.jquery.com_jquery-3.7.0.js
+  Cache-Control: public
+  Cache-Control: max-age=604800
+
+/index.html
+  Cache-Control: public
+  Cache-Control: max-age=604800
+
+/about.html
+  Cache-Control: public
+  Cache-Control: max-age=604800
+
+/contact.html
+  Cache-Control: public
+  Cache-Control: max-age=604800
